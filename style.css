@@ -30,7 +30,10 @@ button{
 }
 
 
-section{background-color: rgb(245,245,245);}
+section{
+    background-color: rgb(245,245,245);
+    transition: all 300ms ease;
+}
 
 .container{
     padding: 50px 0 ;
@@ -50,6 +53,13 @@ section{background-color: rgb(245,245,245);}
 
 .title{
     font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.title__name{
+      font-size: 120px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -135,7 +145,7 @@ nav,
     visibility: visible;
     transition: all 600ms 800ms;
 }
-.modal--open,
+.modal--open nav,
 .modal--open .scroll,
 .modal--open .header{
     opacity: 0;
@@ -143,8 +153,38 @@ nav,
     transition: all 400ms;
 }
 
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .header__para,
+.dark-theme .fa-solid .fa-envelope,
+.dark-theme .nav__link--anchor
+{
+color: white;
+}
+
+.dark-theme section{
+    background-color: #242424;
+}
+
+.dark-theme .social__link,
+.dark-theme .mail__btn{
+    background-color: #242424;
+}
+.dark-theme .mail__btn{
+    color: #fff;
+}
+
+.dark-theme .scroll__icon{
+    border-color: white;
+}
+
+.dark-theme .scroll__icon::after{
+    background-color: white;
+}
+
+
 /*
-NAV
+LANDING-NAV
 */
 
 nav{
@@ -205,6 +245,7 @@ Landing Page
 .social__link{
     background-color:rgb(245,245,245) ;
     color: rgb(4, 163, 168) ;
+    border: none;
     padding: 6px;
     width: 32px;
     height: 32px;
@@ -283,6 +324,8 @@ visibility: hidden;
 z-index: -1;
 transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
+
+
 
 .modal--open .modal{
     z-index: 60;
@@ -577,4 +620,52 @@ footer{
 .footer__social--link,
 .footer__copyright{
     color: white;
+}
+
+/*
+SHAPES
+
+*/
+
+.shape{
+    position: fixed;
+    top: ;
+}
+
+
+.shape--0{
+top: 15vh;
+left: 5vw;
+}
+.shape--1{
+top: 15vh;
+left: 50vw;
+}
+.shape--2{
+top: 15vh;
+left: 80vw;
+}
+.shape--3{
+top: 50vh;
+left: 5vw;
+}
+.shape--4{
+top: 50vh;
+left: 50vw;
+}
+.shape--5{
+top: 50vh;
+left: 80vw;
+}
+.shape--6{
+top: 95vh;
+left: 5vw;
+}
+.shape--7{
+top: 80vh;
+left: 50vw;
+}
+.shape--8{
+top: 80vh;
+left: 80vw;
 }
