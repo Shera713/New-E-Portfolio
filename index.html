@@ -42,7 +42,7 @@
               >projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -67,7 +67,7 @@
             I'm a <b class="teal">Frontend Software Engineer</b> with a
             hfbslbflflkdjflksjdfnj
             <br />
-            Here's a bit more <b class="teal">about me.</b>
+            Here's a bit more <b class="teal click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a href="" class="social__link click">
@@ -85,7 +85,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
 
@@ -119,6 +119,7 @@
 
         </div>
         <div class="modal__half modal__contact">
+             <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">Let's connect!</h3>
             <h4 class="modal__sub-title modal__sub-title--contact"> I'm currently open to new opportunities.</h4>
             <form id="contact__form" onsubmit="contact(event)">
@@ -143,7 +144,7 @@
                 Thank you for the message! I look forward to connecting with you soon.
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
+       
       </div>
     </section>
 
